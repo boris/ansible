@@ -8,6 +8,12 @@ pyenv virtualenv 3.10.12 ansible-3.10.12
 pip install -r requirements.txt
 ```
 
+The `requirements.txt` file was created as follows:
+```
+pip install ansible
+pip freeze > requirements.txt
+```
+
 SSH access to the hosts defined in the inventory is also requried.
 
 ## Repo organization - WIP
