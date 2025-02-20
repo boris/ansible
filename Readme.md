@@ -2,10 +2,10 @@
 To run local geekom.
 
 ## Requirements
-Assuming python and [pyenv](https://github.com/pyenv/pyenv):
+Assuming python, pip and virtualenv are already installed, you can create a
+virtual environment and install the required packages as follows:
 ```
-pyenv virtualenv 3.10.12 ansible-3.10.12
-pip install -r requirements.txt
+make install
 ```
 
 The `requirements.txt` file was created as follows:
