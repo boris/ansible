@@ -16,3 +16,17 @@
       ansible.builtin.apt:
         update_cache: yes
         upgrade: yes
+
+- name: Install packages
+  hosts: local
+  become: yes
+  tasks:
+    - name: Install git and curl
+      ansible.builtin.apt:
+        name:
+          - git
+          - curl
+          - python3-pip
+          - python3-venv
+        state: present
+
